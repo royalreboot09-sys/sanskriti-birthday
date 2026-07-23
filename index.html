@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 15th Birthday, Sanskriti 🌙✨ | Shivani's Birthday Surprise</title>
+  <meta name="description" content="A magical, moonlit digital birthday surprise for Sanskriti (Shivani) on her 15th birthday from her best friend.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-moon"></div>
+    <div class="loader-text">Gathering Starlight for Sanskriti... ✨</div>
+    <div class="loader-progress">
+      <div class="loader-progress-bar" id="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Background Interactive Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#welcome" class="nav-brand">
+      <span>🌙</span> Sanskriti
+    </a>
+    <ul class="nav-links">
+      <li><a href="#welcome" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">Meet Shivani</a></li>
+      <li><a href="#gallery" class="nav-link">Memories</a></li>
+      <li><a href="#timeline" class="nav-link">Timeline</a></li>
+      <li><a href="#talents" class="nav-link">Talents</a></li>
+      <li><a href="#quotes" class="nav-link">Quotes</a></li>
+      <li><a href="#fun" class="nav-link">Fun Corner</a></li>
+      <li><a href="#wishes" class="nav-link">Wishes</a></li>
+      <li><a href="#secrets" class="nav-link">Secrets</a></li>
+      <li><a href="#jukebox" class="nav-link">Favorite Song</a></li>
+      <li><a href="#final-letter" class="nav-link">Letter</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="secret-pill" id="secret-counter-btn" title="Secret Stars Found">
+        <span>⭐</span> <span id="stars-found-count">0</span>/5
+      </div>
+      <div class="audio-widget" id="audio-toggle-btn" title="Toggle Moonlit Background Music">
+        <div class="equalizer">
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+        </div>
+        <span style="font-size: 0.85rem; font-weight: 600;" id="audio-status-text">Music</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE 1: THE MOONLIT WELCOME -->
+  <section id="welcome" class="page-section">
+    <div class="floating-cloud" style="top: 15%; width: 250px; height: 50px; animation-duration: 45s;"></div>
+    <div class="floating-cloud" style="top: 35%; width: 320px; height: 60px; animation-duration: 60s; animation-delay: -20s;"></div>
+
+    <div class="section-container" style="display: flex; flex-direction: column; align-items: center;">
+      <div class="moon-container">
+        <div class="giant-moon">
+          <div class="moon-crater crater-1"></div>
+          <div class="moon-crater crater-2"></div>
+          <div class="moon-crater crater-3"></div>
+        </div>
+      </div>
+
+      <h1 class="hero-title">Happy 15th Birthday,<br>Sanskriti 🌙✨</h1>
+      <p class="hero-subtitle">To the girl who lights up every room she walks into.</p>
+
+      <div class="typewriter-box">
+        <span>Sanskriti is a </span>
+        <span id="typewriter-text" style="color: var(--accent-pink);"></span>
+        <span class="typewriter-cursor"></span>
+      </div>
+
+      <a href="#about" class="glass-btn glass-btn-gold">
+        <span>Begin the Journey</span> ✨
+      </a>
+    </div>
+  </section>
+
+  <!-- PAGE 2: MEET SANSKRITI -->
+  <section id="about" class="page-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chapter 01</span>
+        <h2 class="section-title">Meet Sanskriti</h2>
+        <p class="section-subtitle">A glimpse into the extraordinary world of Shivani</p>
+      </div>
+
+      <div class="glass-card bio-grid">
+        <div class="profile-card">
+          <div class="avatar-wrapper">
+            <img src="assets/images/sanskriti_avatar.jpg" alt="Sanskriti Face Avatar" class="avatar-img">
+          </div>
+          <h3 class="profile-name">Sanskriti</h3>
+          <p class="profile-nickname">Shivani ✨</p>
+          <div class="info-pills">
+            <span class="info-pill">🎂 15 Years Young</span>
+            <span class="info-pill">💃 Dancing Lover</span>
+            <span class="info-pill">🎨 Handicraft Lover</span>
+            <span class="info-pill">💙 Best Friend</span>
+            <span class="info-pill">💬 First Chat: 19 June</span>
+          </div>
+        </div>
+
+        <div class="bio-content">
+          <p class="poetic-quote">
+            "Some people are talented in one thing. Sanskriti somehow decided that wasn't enough."
+          </p>
+          <p style="color: var(--text-muted); font-size: 1.05rem;">
+            She dances with grace, learns with curiosity, crafts beautiful handmade art, and carries countless talents within her. Whether it's coding a new program, hitting the perfect dance move, or creating handmade crafts, she shines brightly in everything she touches.
+          </p>
+
+          <div class="trait-icons" style="grid-template-columns: repeat(5, 1fr);">
+            <div class="trait-box">
+              <div class="trait-icon">💻</div>
+              <div class="trait-label">Coder</div>
+            </div>
+            <div class="trait-box">
+              <div class="trait-icon">💃</div>
+              <div class="trait-label">Dancer</div>
+            </div>
+            <div class="trait-box">
+              <div class="trait-icon">🎨</div>
+              <div class="trait-label">Handicraft</div>
+            </div>
+            <div class="trait-box">
+              <div class="trait-icon">🍎</div>
+              <div class="trait-label">Health</div>
+            </div>
+            <div class="trait-box">
+              <div class="trait-icon">✨</div>
+              <div class="trait-label">Creative</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 3: GALLERY OF MEMORIES -->
+  <section id="gallery" class="page-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chapter 02</span>
+        <h2 class="section-title">Gallery of Memories</h2>
+        <p class="section-subtitle">Real moments captured with situational captions & adaptive framing</p>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Memories</button>
+        <button class="filter-btn" data-filter="recent">Recent Shots</button>
+        <button class="filter-btn" data-filter="special">Special Moments</button>
+        <button class="filter-btn" data-filter="funny">Funny Candids</button>
+        <button class="filter-btn" data-filter="childhood">Childhood</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="polaroid-card" data-category="recent">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_white_top.jpg" alt="Serene Night & Green Foliage" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">Serene Night & Green Foliage 🌙🌿</div>
+        </div>
+
+        <div class="polaroid-card" data-category="recent">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_pink_dress.jpg" alt="Blushing Roses & Elegance" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">Blushing Roses & Elegance 🌹✨</div>
+        </div>
+
+        <div class="polaroid-card" data-category="funny">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_yellow_event.jpg" alt="Stealing Groom's Shoe" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">Stealing the Groom's Shoe! 👟💍</div>
+        </div>
+
+        <div class="polaroid-card" data-category="funny">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_yellow_candid.jpg" alt="Spontaneous Party Dancing" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">Spontaneous Party Dancing 💃💛</div>
+        </div>
+
+        <div class="polaroid-card" data-category="recent">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_yellow_drapes.jpg" alt="Festive Drapes & Bright Smiles" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">Festive Drapes & Bright Smiles 🎨☀️</div>
+        </div>
+
+        <div class="polaroid-card" data-category="funny">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_calf.jpg" alt="Cheek-to-Cheek with Calf" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">Cheek-to-Cheek with the Calf 🐮🤎</div>
+        </div>
+
+        <div class="polaroid-card" data-category="funny">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_puppy.jpg" alt="Fluffy Puppy Companions" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">Fluffy Puppy Companions 🐶🍃</div>
+        </div>
+
+        <div class="polaroid-card" data-category="special">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_school.jpg" alt="School Medal & Heritage Statue" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">School Medal & Heritage Statue 🏛️🏅</div>
+        </div>
+
+        <div class="polaroid-card" data-category="special">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_portrait.jpg" alt="Lazy Afternoons & Soft Smiles" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">Lazy Afternoons & Soft Smiles 🌸</div>
+        </div>
+
+        <div class="polaroid-card" data-category="childhood">
+          <div class="polaroid-img-wrapper">
+            <img src="assets/images/sanskriti_childhood.jpg" alt="Little Baby Shivani Sleeping" class="polaroid-img">
+          </div>
+          <div class="polaroid-caption">Little Baby Shivani Sleeping 👶💤</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 4: FRIENDSHIP TIMELINE -->
+  <section id="timeline" class="page-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chapter 03</span>
+        <h2 class="section-title">Our Friendship Timeline</h2>
+        <p class="section-subtitle">Connected like stars in a beautiful constellation</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">29 APRIL 2026</div>
+            <h3 class="timeline-title">The Story Began 🌟</h3>
+            <p class="timeline-desc">The memorable day our paths crossed and the story of an unforgettable friendship officially began.</p>
+          </div>
+        </div>
+
+        <!-- MANDAP DECORATION MOMENT -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">MANDAP DECORATION MOMENT 🏛️🌸</div>
+            <h3 class="timeline-title">Memorable Moments ✨</h3>
+            <p class="timeline-desc" style="font-style: italic; line-height: 1.6; color: #F1F5F9;">
+              "I always remember that moment when our thoughts collapsed while you were decorating mandap — at the same time I thought to help you, but coincidentally you were thinking: 'kaisa ladka hai ye, help bhi nahi karta hai.'" 😤💖
+            </p>
+          </div>
+        </div>
+
+        <!-- FIRST CHAT DATE -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">19 JUNE</div>
+            <h3 class="timeline-title">The Iconic First Chat Date 💬✨</h3>
+            <p class="timeline-desc">On 19 June, our first conversation ignited! Filled with jokes, banter, and discovering how chaotic we both are.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-date">THE FUTURE</div>
+            <h3 class="timeline-title">Future Adventures 🚀</h3>
+            <p class="timeline-desc">Conquering new goals, achieving big dreams, and creating millions of new memories together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 5: TALENTS -->
+  <section id="talents" class="page-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chapter 04</span>
+        <h2 class="section-title">The Many Talents</h2>
+        <p class="section-subtitle">Click each card to unlock her special powers!</p>
+      </div>
+
+      <div class="talents-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="talent-card" data-talent="coder">
+          <div class="talent-icon-large" style="font-size: 3.5rem;">💻</div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #FFF; margin-bottom: 0.5rem;">Coder</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Logic, curiosity, and turning lines of code into magic.</p>
+        </div>
+
+        <div class="talent-card" data-talent="dancer">
+          <div class="talent-icon-large" style="font-size: 3.5rem;">💃</div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #FFF; margin-bottom: 0.5rem;">Dancer</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Graceful rhythm, passion, and expressing emotion through dance.</p>
+        </div>
+
+        <div class="talent-card" data-talent="handicraft">
+          <div class="talent-icon-large" style="font-size: 3.5rem;">🎨</div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #FFF; margin-bottom: 0.5rem;">Handicraft Lover</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Crafting handmade treasures, DIY art, and creative beauty.</p>
+        </div>
+
+        <div class="talent-card" data-talent="health">
+          <div class="talent-icon-large" style="font-size: 3.5rem;">🍎</div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #FFF; margin-bottom: 0.5rem;">Health-Conscious</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Vitality, discipline, and keeping mind & body in harmony.</p>
+        </div>
+
+        <div class="talent-card" data-talent="multitalented">
+          <div class="talent-icon-large" style="font-size: 3.5rem;">⭐</div>
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #FFF; margin-bottom: 0.5rem;">Multitalented</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Blending creativity, intelligence, and endless charm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 6: QUOTES -->
+  <section id="quotes" class="page-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chapter 05</span>
+        <h2 class="section-title">Words of Starlight</h2>
+        <p class="section-subtitle">Inspirational quotes dedicated to Shivani</p>
+      </div>
+
+      <div class="quotes-carousel-container">
+        <div class="quote-card" id="quote-display-card">
+          <div class="quote-mark">“</div>
+          <div class="quote-text" id="quote-text-element">She carried a universe inside her.</div>
+        </div>
+
+        <div class="carousel-controls" style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; margin-top: 2rem;">
+          <button class="carousel-btn" id="prev-quote-btn">❮</button>
+          <span style="color: var(--text-muted); font-size: 0.9rem;" id="quote-index-indicator">1 / 6</span>
+          <button class="carousel-btn" id="next-quote-btn">❯</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 7: THE FUN CORNER -->
+  <section id="fun" class="page-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chapter 06</span>
+        <h2 class="section-title">Starlight Memory Arcade</h2>
+        <p class="section-subtitle">Touch the magic Crystal Orb & view our signature funny memory!</p>
+      </div>
+
+      <div class="arcade-grid">
+        <div class="glass-card crystal-ball-box">
+          <div class="crystal-orb-wrapper" id="crystal-orb-trigger">
+            <div class="crystal-orb">🔮</div>
+          </div>
+          <button class="glass-btn glass-btn-gold" id="consult-orb-btn">
+            ✨ Consult Starlight Fortune Orb
+          </button>
+          <div class="fortune-result-card" id="fortune-text-box">
+            Touch the glowing orb to reveal Sanskriti's secret birthday fortune! 🔮
+          </div>
+        </div>
+
+        <div class="funny-feature-card">
+          <span class="funny-badge">Featured Mandap Memory</span>
+          <p class="complaint-quote">
+            "Kaisa ladka hai ye, help bhi nahi karta hai." 😤
+          </p>
+          <p class="playful-response">
+            — While I was literally thinking about helping you decorate the mandap! 🏛️👑
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 0.8rem; flex-wrap: wrap;" id="emoji-pop-container">
+            <span style="font-size: 1.8rem; cursor: pointer;" class="pop-emoji">😂</span>
+            <span style="font-size: 1.8rem; cursor: pointer;" class="pop-emoji">🍕</span>
+            <span style="font-size: 1.8rem; cursor: pointer;" class="pop-emoji">💃</span>
+            <span style="font-size: 1.8rem; cursor: pointer;" class="pop-emoji">✨</span>
+            <span style="font-size: 1.8rem; cursor: pointer;" class="pop-emoji">🎉</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 8: WISHES -->
+  <section id="wishes" class="page-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chapter 07</span>
+        <h2 class="section-title">Wishes for the Future</h2>
+        <p class="section-subtitle">Glowing sky lanterns bearing golden wishes</p>
+      </div>
+
+      <div class="lantern-section-container">
+        <canvas id="lantern-canvas"></canvas>
+
+        <div class="wishes-list">
+          <div class="wish-card">
+            <span class="wish-icon">🌟</span>
+            <span class="wish-text">May your talent continue to grow exponentially every single day.</span>
+          </div>
+
+          <div class="wish-card">
+            <span class="wish-icon">💃</span>
+            <span class="wish-text">May every dance step bring unbridled joy to your heart.</span>
+          </div>
+
+          <div class="wish-card">
+            <span class="wish-icon">💻</span>
+            <span class="wish-text">May your code compile on the first try without any syntax errors!</span>
+          </div>
+
+          <div class="wish-card">
+            <span class="wish-icon">🎨</span>
+            <span class="wish-text">May your creative handicraft art bring beauty into every life you touch.</span>
+          </div>
+
+          <div class="wish-card">
+            <span class="wish-icon">💖</span>
+            <span class="wish-text">May true happiness and laughter follow you wherever you go.</span>
+          </div>
+
+          <div class="wish-card">
+            <span class="wish-icon">✨</span>
+            <span class="wish-text">May every dream in your heart transform into breathtaking reality.</span>
+          </div>
+        </div>
+
+        <div class="lantern-launch-box">
+          <input type="text" class="wish-input" id="custom-wish-input" placeholder="Write a wish to launch into the sky...">
+          <button class="glass-btn glass-btn-gold" id="launch-lantern-btn">
+            🏮 Launch Lantern
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 9: SECRET MESSAGES -->
+  <section id="secrets" class="page-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chapter 08</span>
+        <h2 class="section-title">Secret Starlight Messages</h2>
+        <p class="section-subtitle">Find the 5 glowing hidden stars in the night sky below!</p>
+      </div>
+
+      <div class="secret-sky-container">
+        <p class="secret-hint-text">
+          ✨ Click the twinkling constellation stars to unlock hidden notes... (<span id="secret-counter-text">0</span>/5 Discovered)
+        </p>
+
+        <div class="secret-stars-area">
+          <div class="secret-star-node" style="top: 20%; left: 15%;" data-id="1">⭐</div>
+          <div class="secret-star-node" style="top: 65%; left: 30%;" data-id="2">🌟</div>
+          <div class="secret-star-node" style="top: 25%; left: 70%;" data-id="3">✨</div>
+          <div class="secret-star-node" style="top: 75%; left: 80%;" data-id="4">💫</div>
+          <div class="secret-star-node" style="top: 45%; left: 50%;" data-id="5">🌙</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 09: SANSKRITI'S FAVORITE SONG -->
+  <section id="jukebox" class="page-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chapter 09</span>
+        <h2 class="section-title">Sanskriti's Favorite Song 🎧🎶</h2>
+        <p class="section-subtitle">Pure audio playback — press play to listen to her track</p>
+      </div>
+
+      <div class="jukebox-card">
+        <div class="vinyl-player-box">
+          <div class="vinyl-record" id="vinyl-record">
+            <div class="vinyl-center">
+              <img src="assets/images/sanskriti_avatar.jpg" alt="Main Rahoon Ya Na Rahoon" class="vinyl-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="player-controls-panel">
+          <div class="track-info-header">
+            <h3 class="track-title">Main Rahoon Ya Na Rahoon</h3>
+            <p class="track-artist">Armaan Malik | Amaal Mallik</p>
+            <p style="color: var(--accent-gold); font-size: 0.95rem; margin-top: 0.4rem; font-weight: 600;">
+              💖 Sanskriti's All-Time Favorite Song
+            </p>
+          </div>
+
+          <div style="margin-top: 1.5rem; width: 100%;">
+            <audio id="fav-song-audio" controls style="width: 100%; border-radius: 30px; outline: none; filter: drop-shadow(0 4px 15px rgba(236,72,153,0.3));">
+              <source src="assets/audio/main_rahoon_ya_na_rahoon.m4a" type="audio/mp4">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 10: THE FINAL BIRTHDAY LETTER -->
+  <section id="final-letter" class="page-section">
+    <div class="section-container">
+      <div class="rooftop-backdrop">
+        <div class="letter-wrapper">
+          <div class="letter-header">
+            <div class="letter-moon-icon">🌙✨</div>
+            <h2 class="section-title">The Birthday Letter</h2>
+            <p style="color: var(--accent-gold); font-size: 0.95rem;">To Sanskriti (Shivani)</p>
+          </div>
+
+          <div class="letter-body">
+            <p class="letter-highlight">Happy Birthday, Sanskriti.</p>
+
+            <p>
+              You are talented, kind, hardworking, and truly special. From dancing to coding and crafting handmade art, you somehow manage to do everything with your own signature style and grace.
+            </p>
+
+            <p>
+              Thank you for all the laughter, the unforgettable memories, and even that iconic mandap decoration moment when our thoughts collapsed!
+            </p>
+
+            <p>
+              May this 15th year bring overwhelming happiness, immense success, unforgettable moments, and countless reasons to smile every single day.
+            </p>
+
+            <p>
+              No matter how many birthdays pass or how far time takes us, this friendship will always remain one of the brightest, most cherished stars in the sky.
+            </p>
+
+            <p class="letter-highlight" style="text-align: right; margin-top: 1rem;">
+              Happy 15th Birthday, Shivani! 🌙✨
+            </p>
+          </div>
+
+          <div class="letter-footer">
+            <button class="glass-btn glass-btn-gold replay-btn" id="trigger-celebration-btn">
+              🎆 Celebrate & Spark Fireworks!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Gallery -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-content">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+      <img src="" alt="" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Secret Message Modal -->
+  <div class="secret-modal" id="secret-modal">
+    <div class="secret-modal-card">
+      <div class="secret-modal-icon">🌟</div>
+      <div class="secret-modal-msg" id="secret-modal-msg"></div>
+      <button class="glass-btn" id="secret-modal-close">Close Starlight Note ✨</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
